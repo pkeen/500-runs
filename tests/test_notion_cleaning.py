@@ -73,5 +73,3 @@ class Test_clean_notion_weight_data:
         assert "weight" in cleaned.columns
         assert "Date" not in cleaned.columns
         assert "Weight KG" not in cleaned.columns
-
-

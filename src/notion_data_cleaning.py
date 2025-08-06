@@ -10,7 +10,7 @@ def clean_notion_weight_data(df: pd.DataFrame):
     """Pipeline for cleaning notion weight data"""
 
     # validate key columns
-    notion_data_schema.validate(df)
+    df = notion_data_schema.validate(df)
 
     # Step 1: Extract just the date and weight columns
     notion_weight_df = df[['Date', 'Weight KG']].copy()
